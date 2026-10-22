@@ -3,125 +3,284 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Piyush Jaroli — Personal Profile</title>
+  <meta name="description" content="Portfolio of Piyush Jaroli, a Computer Science student specializing in AI and Machine Learning.">
+  <title>Piyush Jaroli | Portfolio</title>
+
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="chatbot.css">
 </head>
 <body>
-  <header>
+
+  <header id="home">
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
     <h1>PIYUSH JAROLI</h1>
-    <p class="tagline">AI & Machine Learning Undergraduate | Building Intelligent Multi-Agent Workflows & Data-Driven Solutions</p>
+
+    <p class="tagline">
+      AI & Machine Learning Undergraduate |
+      Building Intelligent Multi-Agent Workflows & Data-Driven Solutions
+    </p>
+
+    <div class="profile-links">
+      <a href="https://github.com/piyushjaroli658-bit"
+         target="_blank" rel="noopener noreferrer">
+        GitHub Profile
+      </a>
+      <a href="#projects">Explore Projects</a>
+    </div>
   </header>
 
   <main>
     <section id="about" aria-labelledby="about-heading">
-      <h2 id="about-heading">About</h2>
-      <p>
-        I am an undergraduate Computer Science student specializing in Artificial Intelligence and Machine Learning, with a strong focus on building intelligent multi-agent workflows, Python automation, and data-driven solutions. Based in Jaipur, India, I enjoy solving complex problems through clean code, exploring modern AI architectures, and continuously turning innovative concepts into scalable, real-world projects.
-      </p>
+      <h2 id="about-heading">About Me</h2>
+
+      <div class="about-layout">
+        <img
+          class="profile-photo"
+          src="assets/proflie.jpg"
+          alt="Portrait of Piyush Jaroli"
+          width="180"
+          height="180"
+        >
+
+        <p>
+          I am an undergraduate Computer Science student specializing in
+          Artificial Intelligence and Machine Learning. I am interested in
+          Python programming, data-driven solutions, problem-solving, and
+          exploring AI technologies. I enjoy learning through practical
+          projects and continuously improving my technical skills.
+        </p>
+      </div>
+    </section>
+
+    <section id="education" aria-labelledby="education-heading">
+      <h2 id="education-heading">Education</h2>
+
+      <article class="education-card">
+        <h3>B.Tech — Computer Science and Engineering</h3>
+        <p><strong>Specialization:</strong> Artificial Intelligence and Machine Learning</p>
+        <p><strong>Institution:</strong> JECRC</p>
+        <p>
+          <strong>Academic status:</strong>
+          Undergraduate student
+        </p>
+      </article>
     </section>
 
     <section id="skills" aria-labelledby="skills-heading">
       <h2 id="skills-heading">Skills</h2>
-      <ul>
+
+      <ul class="skill-list">
         <li>C++</li>
-  
         <li>C</li>
         <li>Python</li>
         <li>Agentic AI</li>
-        <li>DSA</li>
+        <li>Data Structures and Algorithms</li>
       </ul>
     </section>
 
     <section id="projects" aria-labelledby="projects-heading">
       <h2 id="projects-heading">Projects</h2>
-      <ul>
-        <li>
-          <a href="https://github.com/piyushjaroli658-bit/python-basics-25BCON0667-fibonacci">FIBONACCI</a>
-          — The Fibonacci Sequence Optimizer is a high-performance algorithmic project designed to explore, benchmark, and compare different computational approaches for generating Fibonacci numbers. Moving beyond standard naive recursion, this project demonstrates optimization techniques including Memoization (Top-Down DP), Tabulation (Bottom-Up DP), and Matrix Exponentiation. Built with a focus on algorithmic complexity and time-space trade-offs, it highlights efficient problem-solving principles essential for robust software engineering.
-        </li>
-        <li>
-          <a href="https://github.com/piyushjaroli658-bit/pyhton-basics-25BCON0667-factorial">FACTORIAL</a>
-          — The Factorial Computation & Large Number Analyzer is a robust algorithmic project designed to explore efficient ways to compute factorials and handle large integer overflows. While basic factorial calculation is straightforward, this project dives deeper into iterative vs. recursive paradigms, tail-call optimization, and precision handling for extremely large numbers (beyond standard integer limits) using custom array-based multiplication logic
-        </li>
-        <li>
-          <a href="https://github.com/piyushjaroli658-bit/python-basics-25BCON0667-struct-to-dict">STRUCT TO DICT</a>
-          — The Struct-to-Dict Utility is a lightweight, high-performance data serialization tool designed to seamlessly convert complex objects, custom data structures, and dataclasses into standard Python dictionaries—and vice versa. Built to bridge the gap between object-oriented data models and external data formats like JSON, API payloads, or configuration files, this project streamlines data management and preprocessing workflows.
-        </li>
-        <li>
-          <a href="https://github.com/piyushjaroli658-bit/reading_list">READING LIST</a>
-          — The Personal Reading List & Book Management Hub is a dynamic web application designed to help users curate, track, and organize their reading journeys. Built with a clean user interface and robust state management, this application allows users to catalog books, track reading status (e.g., Want to Read, Currently Reading, Completed), categorize genres, and maintain a seamless digital bookshelf.
-        </li>
-        <li>
-          <a href="https://github.com/piyushjaroli658-bit/bug-fix">BUG FIXING IN PYTHON</a>
-          — The Automated Bug Analyzer & Debugging Assistant is a developer-focused utility designed to parse complex error tracebacks, diagnose root causes of runtime and syntax exceptions, and suggest or automatically apply code fixes. By streamlining the debugging workflow, this tool helps developers quickly isolate bugs, understand stack traces, and implement robust error-handling mechanisms across their codebase.
-        </li>
-        <li>
-          <a href="https://github.com/piyushjaroli658-bit/correcting-grade-25BCON0667">MESSY PYTHON CODE</a>
-          — The Messy Python Code Cleaner & Refactoring Utility is an automated script and code-quality tool designed to transform unstructured, poorly formatted, or 'messy' Python code into clean, PEP 8-compliant, and maintainable codebases. Utilizing Python's powerful built-in AST (Abstract Syntax Tree) parsing and regex pattern matching, this project automates the tedious process of fixing inconsistent indentation, removing dead code, cleaning up unused imports, and standardizing coding styles across scripts.
-        </li>
-        <li>
-          <a href="https://github.com/piyushjaroli658-bit/QUIZ">QUIZ</a>
-          — The Quiz Application is a web-based quiz platform designed to engage users with interactive question-and-answer sessions. Built with a clean user interface and robust question management system, this application allows users to create quizzes, track progress, and evaluate their knowledge on a variety of topics.
-        </li>
-      </ul>
+
+      <p>Explore my projects by name or technology.</p>
+
+      <label class="search-label" for="projectSearch">
+        Search projects
+      </label>
+      <input
+        type="search"
+        id="projectSearch"
+        class="project-search"
+        placeholder="Try Python, quiz, or reading list..."
+        autocomplete="off"
+      >
+
+      <div class="filter-controls" aria-label="Filter projects by technology">
+        <button type="button" class="filter-button active"
+                data-filter="all" aria-pressed="true">All</button>
+        <button type="button" class="filter-button"
+                data-filter="python" aria-pressed="false">Python</button>
+        <button type="button" class="filter-button"
+                data-filter="web" aria-pressed="false">Web</button>
+        <button type="button" class="filter-button"
+                data-filter="quiz" aria-pressed="false">Quiz</button>
+      </div>
+
+      <div class="project-grid" id="projectGrid">
+
+        <article class="project-card"
+                 data-title="python programs collection factorial fibonacci structure to dictionary"
+                 data-tech="python">
+          <h3>Python Programs Collection</h3>
+          <p>
+            A collection of beginner Python programming exercises covering
+            factorial calculation, the Fibonacci sequence, and structure-to-dictionary conversion.
+          </p>
+          <div class="tech-tags">
+            <span>Python</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/piyushjaroli658-bit/python-basics-25BCON0667-fibonacci"
+               target="_blank" rel="noopener noreferrer">Fibonacci</a>
+
+            <a href="https://github.com/piyushjaroli658-bit/pyhton-basics-25BCON0667-factorial"
+               target="_blank" rel="noopener noreferrer">Factorial</a>
+
+            <a href="https://github.com/piyushjaroli658-bit/python-basics-25BCON0667-struct-to-dict"
+               target="_blank" rel="noopener noreferrer">Struct to Dict</a>
+          </div>
+        </article>
+
+        <article class="project-card"
+                 data-title="messy python code improvement refactoring"
+                 data-tech="python">
+          <h3>Messy Python Code Improvement</h3>
+          <p>
+            A Python code-improvement exercise focused on making existing
+            code easier to read and understand.
+          </p>
+          <div class="tech-tags">
+            <span>Python</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/piyushjaroli658-bit/correcting-grade-25BCON0667"
+               target="_blank" rel="noopener noreferrer">View Code</a>
+          </div>
+        </article>
+
+        <article class="project-card"
+                 data-title="bug fixing in python debugging cursor ai"
+                 data-tech="python">
+          <h3>Bug Fixing in Python</h3>
+          <p>
+            A project documenting Python bug-fixing work.
+            Review the repository for the specific bugs and solutions.
+          </p>
+          <div class="tech-tags">
+            <span>Python</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/piyushjaroli658-bit/bug-fix"
+               target="_blank" rel="noopener noreferrer">View Code</a>
+          </div>
+        </article>
+
+        <article class="project-card"
+                 data-title="interactive quiz application quiz"
+                 data-tech="web quiz">
+          <h3>Interactive Quiz Application</h3>
+          <p>
+            A quiz project. Visit the repository to inspect its questions,
+            interface, and implemented functionality.
+          </p>
+          <div class="tech-tags">
+            <span>Quiz</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/piyushjaroli658-bit/QUIZ"
+               target="_blank" rel="noopener noreferrer">View Code</a>
+          </div>
+        </article>
+
+        <article class="project-card"
+                 data-title="book reading list reading list application"
+                 data-tech="web">
+          <h3>Book Reading List</h3>
+          <p>
+            A reading-list project for organizing information about books.
+            Visit the repository for its actual implementation and features.
+          </p>
+          <div class="tech-tags">
+            <span>Reading List</span>
+          </div>
+          <div class="project-links">
+            <a href="https://github.com/piyushjaroli658-bit/reading_list"
+               target="_blank" rel="noopener noreferrer">View Code</a>
+          </div>
+        </article>
+
+      </div>
+
+      <p id="noProjectsMessage" class="no-results" hidden>
+        No projects found. Try another search or filter.
+      </p>
+    </section>
+
+    <section id="weather" aria-labelledby="weather-heading">
+      <h2 id="weather-heading">Weather</h2>
+
+      <label for="cityInput">Enter a city</label>
+      <div class="weather-controls">
+        <input
+          type="text"
+          id="cityInput"
+          placeholder="e.g. Jaipur"
+        >
+        <button type="button" id="weatherButton">Get Weather</button>
+      </div>
+
+      <div id="weatherResult" aria-live="polite">
+        Enter a city to see the weather.
+      </div>
+    </section>
+
+    <section id="aiChatSection" class="ai-chat">
+      <h2>Ask My AI Assistant</h2>
+
+      <p>
+        Ask questions about this portfolio, projects, and technologies.
+      </p>
+
+      <div id="chatMessages" aria-live="polite"></div>
+
+      <div class="chat-controls">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Ask a question..."
+          aria-label="Your question"
+        >
+        <button type="button" id="sendButton">Send</button>
+      </div>
+
+      <p id="chatStatus" role="status"></p>
+
+      <p class="chat-note">
+        Ask about the projects and skills listed on this page.
+      </p>
     </section>
   </main>
-  <section id="weather">
-    <h2>Weather</h2>
 
-    <input
-        type="text"
-        id="cityInput"
-        placeholder="Enter a city"
-    >
+  <footer id="contact">
+    <h2>Contact</h2>
+    <p>
+      Email:
+      <a href="mailto:piyushjaroli658@gmail.com">
+        piyushjaroli658@gmail.com
+      </a>
+    </p>
+    <p>
+      GitHub:
+      <a href="https://github.com/piyushjaroli658-bit"
+         target="_blank" rel="noopener noreferrer">
+        github.com/piyushjaroli658-bit
+      </a>
+    </p>
+  </footer>
 
-    <button id="weatherButton">
-        Get Weather
-    </button>
-
-    <div id="weatherResult">
-        Enter a city to see the weather.
-    </div>
-</section>
-<section id="aiChatSection" class="ai-chat">
-  <h2>Ask My AI Assistant</h2>
-
-  <p>
-    Ask questions about this portfolio,
-    projects, and technologies.
-  </p>
-
-  <div
-    id="chatMessages"
-    aria-live="polite"
-  ></div>
-
-  <div class="chat-controls">
-    <input
-      type="text"
-      id="userInput"
-      placeholder="Ask a question..."
-    />
-
-    <button id="sendButton" type="button">
-      Send
-    </button>
+  <div class="theme-control">
+    <button type="button" id="themeToggle">Switch to Dark Mode</button>
   </div>
 
-  <p id="chatStatus" role="status"></p>
-
-  <p class="chat-note">
-    AI chat is available during the local
-    classroom demonstration only.
-  </p>
-</section>
-  <footer>
-    <p>Contact: piyushjaroli658@gmail.com</p>
-  </footer>
-  <button id="themeToggle">Switch to Dark Mode</button>
   <script src="script.js"></script>
-  <script src="config.js"></script>
+  <!-- config.js will be removed in Phase 2 after secure API endpoints are added. -->
   <script src="chatbot.js"></script>
 </body>
 </html>
