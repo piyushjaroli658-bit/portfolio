@@ -115,13 +115,23 @@ Keep answers concise and professional, ideally under 100 words.
         error: "The AI service is busy. Please try again shortly."
       });
     }
-
+    
     if (!response.ok) {
-      console.error("Groq returned HTTP", response.status);
+      const errorText = await response.text();
+
+      console.error(
+        "Groq API error:",
+        response.status,
+        errorText
+      );
+
       return res.status(502).json({
-        error: "The AI service is temporarily unavailable."
+        error: "The AI service is temporarily unavailable.",
+        details: errorText,
+        status: response.status
       });
     }
+
 
     const data = await response.json();
     const answer = data.choices?.[0]?.message?.content;
