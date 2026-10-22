@@ -119,3 +119,326 @@ footer {
 footer p {
   margin: 0;
 }
+/* ===== Portfolio navigation ===== */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 18px;
+  margin-bottom: 28px;
+}
+
+.site-nav a,
+.profile-links a {
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.site-nav a:hover,
+.profile-links a:hover {
+  text-decoration: underline;
+}
+
+.profile-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+/* ===== About and profile photo ===== */
+
+.about-layout {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.about-layout p {
+  flex: 1;
+}
+
+.profile-photo {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid #c9a227;
+  flex-shrink: 0;
+}
+
+.small-note {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+/* ===== Education ===== */
+
+.education-card {
+  border: 1px solid #d9e0ea;
+  border-left: 4px solid #c9a227;
+  border-radius: 10px;
+  padding: 18px;
+  background: #f8fafc;
+}
+
+.education-card h3 {
+  margin-top: 0;
+}
+
+.education-card p:last-child {
+  margin-bottom: 0;
+}
+
+/* ===== Skills ===== */
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+.skill-list li,
+.tech-tags span {
+  display: inline-block;
+  background: #edf2f8;
+  color: #1a2b4a;
+  border-radius: 999px;
+  padding: 6px 12px;
+  font-size: 0.9rem;
+}
+
+/* ===== Project search and filters ===== */
+
+.search-label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 700;
+}
+
+.project-search {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: inherit;
+}
+
+.filter-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  padding: 8px 14px;
+  border: 1px solid #cbd5e1;
+  border-radius: 999px;
+  background: #fff;
+  color: #1a2b4a;
+  cursor: pointer;
+  font: inherit;
+}
+
+.filter-button.active,
+.filter-button[aria-pressed="true"] {
+  background: #1e4d8c;
+  color: #fff;
+  border-color: #1e4d8c;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.project-card {
+  min-width: 0;
+  padding: 20px;
+  border: 1px solid #d9e0ea;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.06);
+  overflow-wrap: anywhere;
+}
+
+.project-card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #1e4d8c;
+}
+
+.project-card p {
+  font-size: 0.96rem;
+}
+
+.tech-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 14px 0;
+}
+
+.project-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.project-links a {
+  font-weight: 700;
+}
+
+.no-results {
+  padding: 16px;
+  text-align: center;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+}
+
+/* ===== Weather widget ===== */
+
+#weather {
+  max-width: 42rem;
+  margin: 0 auto 36px;
+  padding: 0 1.5rem;
+}
+
+.weather-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+#cityInput {
+  flex: 1;
+  min-width: 0;
+  padding: 10px;
+  font: inherit;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+}
+
+#weatherButton,
+#sendButton,
+#themeToggle {
+  padding: 10px 16px;
+  border: 1px solid #1e4d8c;
+  border-radius: 8px;
+  background: #1e4d8c;
+  color: #fff;
+  cursor: pointer;
+  font: inherit;
+}
+
+#weatherResult {
+  margin-top: 16px;
+}
+
+/* ===== Footer and theme control ===== */
+
+footer {
+  margin-top: 24px;
+}
+
+.theme-control {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 0 1.5rem 28px;
+}
+
+button:focus-visible,
+input:focus-visible,
+a:focus-visible {
+  outline: 3px solid #c9a227;
+  outline-offset: 3px;
+}
+
+/* ===== Dark mode additions ===== */
+
+body.dark-mode .education-card,
+body.dark-mode .project-card {
+  background: #292929;
+  border-color: #555;
+  color: #f5f5f5;
+}
+
+body.dark-mode .project-card h3 {
+  color: #e4c66a;
+}
+
+body.dark-mode .skill-list li,
+body.dark-mode .tech-tags span {
+  background: #3a3a3a;
+  color: #fff;
+}
+
+body.dark-mode .project-search,
+body.dark-mode #cityInput,
+body.dark-mode .filter-button {
+  background: #292929;
+  color: #fff;
+  border-color: #666;
+}
+
+body.dark-mode .filter-button.active,
+body.dark-mode .filter-button[aria-pressed="true"] {
+  background: #1e4d8c;
+}
+
+body.dark-mode .small-note {
+  color: #cbd5e1;
+}
+
+/* ===== Mobile layout ===== */
+
+@media (max-width: 640px) {
+  header,
+  main,
+  footer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  .site-nav {
+    gap: 10px 14px;
+  }
+
+  .about-layout {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .profile-photo {
+    width: 125px;
+    height: 125px;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr;
+  }
+
+  #weather {
+    padding: 0 1rem;
+  }
+
+  .theme-control {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
