@@ -7,8 +7,10 @@ A responsive portfolio website showcasing my profile, skills, projects and profe
 
 https://portfolio-five-ruby-87.vercel.app/
 Keep it near the top.
-<img width="1920" height="1080" alt="Screenshot 2026-10-15 100501" src="https://github.com/user-attachments/assets/633a2f70-85e9-4964-aa92-744e5bc5396a" />
-<img width="1920" height="1080" alt="Screenshot 2026-10-15 100455" src="https://github.com/user-attachments/assets/eb72f3f5-e89f-4243-905f-3fa57af5d5f3" />
+<img width="1920" height="1080" alt="Screenshot 2026-10-25 182057" src="https://github.com/user-attachments/assets/87e22bda-b612-4af1-b48d-77a0c2352639" />
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/fcaac9f0-a5aa-49fd-b134-6f6f892cb67a" />
+
 
 
 For a portfolio, use:
